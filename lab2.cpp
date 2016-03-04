@@ -14,7 +14,7 @@ public:
     {
         rozmiar=x;
     }
-    int Zapisz()
+    void Zapisz()
     {
         for(licznik=0; licznik<rozmiar; licznik++)
         {
