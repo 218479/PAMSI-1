@@ -19,7 +19,7 @@ int main()
         }
         else
         {
-            Tabliczka.powieksz(100000);
+            Tabliczka.powieksz(1);
         }
 
     }
@@ -27,8 +27,6 @@ int main()
     trwanie=(double)(stop-start)/CLOCKS_PER_SEC;
     cout<<endl;
     cout<<"TRWALO TO: "<<trwanie<<"sekund"<<endl;
-    cout<<"Suma wynosi: ";
-    Tabliczka.suma();
 
     return 0;
 }
