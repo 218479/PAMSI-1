@@ -1,23 +1,24 @@
 #include <iostream>
 #include <time.h>
 #include "Tablica_dynamiczna.hh"
+#include "stoper.hh"
 
 using namespace std;
 
 int main()
 {
+    stoper Liczydlo;
     int wybor=99;
     int ile_liczb,o_ile;
-    double trwanie;
-    time_t start, stop;
     cout<<"Ile liczba ma zostac dopisanych do tablicy?"<<endl;
     cin>>ile_liczb;
     cout<<"\n\nWybierz algorytm:\n1.Powiekszanie o 1\n2.Powiekszanie o 100"<<endl;
     cout<<"3.Powiekszenie o zadana wczesniej liczb"<<endl;
     cout<<"0.Wyjscie z programu\n"<<endl;
+
+
     while(wybor!=0)
     {
-
         cin>>wybor;
         switch(wybor)
         {
@@ -39,7 +40,7 @@ int main()
         }
         tablica_dyn Tabliczka(10, 0);
         Tabliczka.zapisz();
-        start=clock();
+        Liczydlo.Wlacz();
         while(Tabliczka.get_licznik()<ile_liczb)
         {
             if(Tabliczka.czy_miejsce()==true)
@@ -51,10 +52,9 @@ int main()
                 Tabliczka.powieksz(o_ile);
             }
         }
-        stop=clock();
-        trwanie=(double)(stop-start)/CLOCKS_PER_SEC;
-        cout<<endl;
-        cout<<"TRWALO TO: "<<trwanie<<"sekund"<<endl;
+        Liczydlo.Wylacz();
+        Liczydlo.Czas_trwania();
+        Liczydlo.Wyzeruj_stoper();
     }
     return 0;
 }

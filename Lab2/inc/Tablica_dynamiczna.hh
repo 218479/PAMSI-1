@@ -1,10 +1,11 @@
 #ifndef Tablica_dynamiczna_hh
 #define Tablica_dynamiczna_hh
+#include "Interfejs.hh"
 #include <iostream>
 
 using namespace std;
 
-class tablica_dyn
+class tablica_dyn:public Interfejs
 {
 private:
     int rozmiar;
@@ -27,4 +28,5 @@ public:
     void suma();
 
 };
+
 #endif
