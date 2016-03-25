@@ -1,0 +1,11 @@
+Algorytm 3
+Dopisanie 100 elementow:	9.1e-06
+Dopisanie 1000 elementow:	7.6e-05
+Dopisanie 100000 elementow:	0.0031155
+Dopisanie 1000000 elementow:	0.0208882
+Dopisanie 1000000000 elementow:	16.5966
+Algorytm 2
+Dopisanie 100 elementow:	16.5966
+Dopisanie 1000 elementow:	16.5967
+Dopisanie 100000 elementow:	16.8787
+Dopisanie 1000000 elementow:	42.7226

@@ -15,25 +15,16 @@ void stoper::Wylacz()
 void stoper::Czas_trwania()
 {
     trwanie=(double)(stop-start)/CLOCKS_PER_SEC;
-    cout<<"Czas trwania:"<<trwanie<<endl;
 }
 
-void stoper::Wyzeruj_stoper()
+double stoper::Zliczaj_do_sumy()
+{
+    suma=suma+trwanie;
+    return suma;
+}
+void stoper::przygotuj()
 {
     start=0;
     stop=0;
     trwanie=0;
-}
-void stoper::Przeslij_do_pliku(int ile)
-{
-    fstream plik;
-    plik.open("Wyniki.txt", ios::in|ios::app);
-    if(plik.good())
-    {
-        plik<<"Dopisanie "<<ile<<"Wierszy zajelo"<<trwanie<<"sekund"<<endl;
-    }
-    else
-    {
-        cout<<"NIE UDALO SIE UTWORZYC PLIKU!"<<endl;
-    }
 }
