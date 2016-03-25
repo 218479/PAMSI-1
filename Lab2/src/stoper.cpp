@@ -27,4 +27,5 @@ void stoper::przygotuj()
     start=0;
     stop=0;
     trwanie=0;
+    suma=0;
 }

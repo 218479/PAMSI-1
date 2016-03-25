@@ -13,10 +13,8 @@ class stoper: public Interfejs_klasa
 private:
     time_t start, stop;
     double trwanie, suma;
-    void Wlacz();
-    void Wylacz();
-    void Czas_trwania();
-    double Zliczaj_do_sumy();
+
+
 
 public:
     stoper()
@@ -31,7 +29,10 @@ public:
     {
         return trwanie;
     }
-
+    void Wlacz();
+    void Wylacz();
+    void Czas_trwania();
+    double Zliczaj_do_sumy();
     virtual void przygotuj();
     virtual void wykonaj()
     {

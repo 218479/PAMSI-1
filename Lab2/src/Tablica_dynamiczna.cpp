@@ -143,8 +143,10 @@ void tablica_dyn::wykonaj()
         cout<<"Dopisanie "<<liczby[j]<<" elementow:\t"<<Czas.Zliczaj_do_sumy()/10<<endl;
         Czas.przygotuj();
     }
+    this->Reset();
+    Czas.przygotuj();
     cout<<"Algorytm 2"<<endl;
-    for(int j=0; j<5; j++)
+    for(int j=0; j<4; j++)
     {
         for(int i=0; i<10; i++)
         {
@@ -153,14 +155,15 @@ void tablica_dyn::wykonaj()
             Czas.Wylacz();
             Czas.Czas_trwania();
             Czas.Zliczaj_do_sumy();
-            Czas.przygotuj();
             this->Reset();
         }
         cout<<"Dopisanie "<<liczby[j]<<" elementow:\t"<<Czas.Zliczaj_do_sumy()/10<<endl;
         Czas.przygotuj();
     }
+    this->Reset();
+    Czas.przygotuj();
     cout<<"Algorytm 1"<<endl;
-    for(int j=0; j<5; j++)
+    for(int j=0; j<4; j++)
     {
         for(int i=0; i<10; i++)
         {
@@ -169,7 +172,6 @@ void tablica_dyn::wykonaj()
             Czas.Wylacz();
             Czas.Czas_trwania();
             Czas.Zliczaj_do_sumy();
-            Czas.przygotuj();
             this->Reset();
         }
         cout<<"Dopisanie "<<liczby[j]<<" elementow:\t"<<Czas.Zliczaj_do_sumy()/10<<endl;
