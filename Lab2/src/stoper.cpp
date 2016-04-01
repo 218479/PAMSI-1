@@ -15,12 +15,12 @@ void stoper::Wylacz()
 void stoper::Czas_trwania()
 {
     trwanie=(double)(stop-start)/CLOCKS_PER_SEC;
+    cout<<trwanie<<endl;
 }
 
-double stoper::Zliczaj_do_sumy()
+void stoper::Zliczaj_do_sumy()
 {
     suma=suma+trwanie;
-    return suma;
 }
 void stoper::przygotuj()
 {

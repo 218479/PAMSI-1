@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class tablica_dyn: public Interfejs_klasa
+class tablica_dyn: public Interfejs
 {
 private:
     int rozmiar;
@@ -25,7 +25,6 @@ private:
     void Algorytm1(int ile);
     void Algorytm2(int ile);
     void Algorytm3(int ile);
-    void Reset();
 public:
     tablica_dyn(int x=10, int y=0)
     {
@@ -42,8 +41,7 @@ public:
     {
         this->tablica=Tablica->tablica;
     }
-virtual void przygotuj(){
-}
+virtual void przygotuj();
 virtual void wykonaj();
 };
 

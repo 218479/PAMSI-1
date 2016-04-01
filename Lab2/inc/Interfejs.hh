@@ -2,7 +2,7 @@
 #define INTERFEJS_HH
 #include <iostream>
 
-class Interfejs_klasa{
+class Interfejs{
 public:
 virtual void przygotuj()=0;
 virtual void wykonaj()=0;

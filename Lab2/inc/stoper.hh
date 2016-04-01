@@ -4,11 +4,10 @@
 #include <iostream>
 #include <time.h>
 #include <fstream>
-#include "Interfejs.hh"
 
 using namespace std;
 
-class stoper: public Interfejs_klasa
+class stoper
 {
 private:
     time_t start, stop;
@@ -29,14 +28,15 @@ public:
     {
         return trwanie;
     }
+    double get_suma()
+    {
+        return suma;
+    }
     void Wlacz();
     void Wylacz();
     void Czas_trwania();
-    double Zliczaj_do_sumy();
-    virtual void przygotuj();
-    virtual void wykonaj()
-    {
-    }
+    void Zliczaj_do_sumy();
+    void przygotuj();
 };
 
 #endif
