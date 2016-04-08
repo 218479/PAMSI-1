@@ -7,7 +7,7 @@ class Kolejka: public IKolejka
 private:
 
 public:
-   virtual void push(int Element);
+   virtual void push(int x);
    virtual int pop();
    virtual int Rozmiar();
 

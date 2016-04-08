@@ -58,10 +58,10 @@ void Lista::usun(int pozycja)
     Element* tmp=poczatek;
 
     if(pozycja==0)
-    {	
-	tmp=poczatek;
+    {
         poczatek=poczatek->nastepny;
         delete tmp;
+        tmp=poczatek;
     }
 
     else if(pozycja==get_size())
@@ -75,6 +75,28 @@ void Lista::usun(int pozycja)
         }
         koniec=tmp;
         koniec->nastepny=NULL;
+    }
+    else
+    {
+        if(get_size()<pozycja)
+        {
+            cout<<"Nie da się dodac w wybrane miejsce! Za malo danych"<<endl;
+        }
+        else
+        {
+            int i=0;
+
+            Element *p=poczatek;
+            Element *q=poczatek;
+            while(i<pozycja)
+            {
+                i++;
+                p=p->nastepny;
+
+            }
+            q=p->nastepny->nastepny;
+            p->nastepny=q;
+        }
     }
 }
 int Lista::get(int nr)
@@ -113,7 +135,6 @@ int Lista::get_size()
 
 void Lista::przeszukaj(int a)
 {
-    int i=0;
     int x=0;
     Element *tmp=poczatek;
     while(tmp)
@@ -123,7 +144,6 @@ void Lista::przeszukaj(int a)
             x++;
         }
         tmp=tmp->nastepny;
-        i++;
     }
     cout<<"Na liscie znajduje się "<<x<<" Takich wartosci"<<endl;
 

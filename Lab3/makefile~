@@ -1,8 +1,8 @@
 
 all: prog
 
-prog: obj/main.o obj/Stos.o obj/Kolejka.o obj/ILista.o obj/IStos.o obj/IKolejka.o obj/Lista.o obj/stoper.o obj/Test_lista.o
-	g++ -Iinc -Wall -pedantic -o program obj/main.o obj/Stos.o obj/Kolejka.o obj/ILista.o obj/IStos.o obj/IKolejka.o obj/Lista.o obj/stoper.o obj/Test_lista.o
+prog: obj/main.o obj/Stos.o obj/Kolejka.o obj/ILista.o obj/IStos.o obj/IKolejka.o obj/Lista.o
+	g++ -Iinc -Wall -pedantic -o program obj/main.o obj/Stos.o obj/Kolejka.o obj/ILista.o obj/IStos.o obj/IKolejka.o obj/Lista.o
 
 
 obj/IStos.o: src/IStos.cpp
@@ -22,12 +22,6 @@ obj/ILista.o: src/ILista.cpp
 
 obj/Lista.o: src/Lista.cpp
 	g++ -c -Iinc -Wall -pedantic -o obj/Lista.o src/Lista.cpp 
-
-obj/stoper.o: src/stoper.cpp
-	g++ -c -Iinc -Wall -pedantic -o obj/stoper.o src/stoper.cpp
-
-obj/Test_lista.o: src/Test_lista.cpp
-	g++ -c -Iinc -Wall -pedantic -o obj/Test_lista.o src/Test_lista.cpp
 
 obj/main.o: src/main.cpp
 	g++ -c -Iinc -Wall -pedantic -o obj/main.o src/main.cpp

@@ -1,7 +1,7 @@
 #include "Kolejka.hh"
-void Kolejka::push(int Element)
+void Kolejka::push(int x)
 {
-this->dodaj(Element,this->Rozmiar());
+this->dodaj(x,this->Rozmiar());
 }
 int Kolejka::pop()
 {

@@ -1,0 +1,12 @@
+#ifndef ISTOS_HH
+#define ISTOS_HH
+#include "ILista.hh"
+
+class IStos:public ILista{
+public:
+
+private:
+
+};
+
+#endif // ISTOS__HH

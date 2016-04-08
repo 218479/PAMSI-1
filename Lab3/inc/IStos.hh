@@ -1,13 +1,13 @@
 #ifndef ISTOS_HH
 #define ISTOS_HH
-#include "ILista.hh"
+#include "Lista.hh"
 
-class IStos:public ILista{
+class IStos:public Lista{
 private:
 
 public:
 
-   virtual void push(int Element)=0;
+   virtual void push(int x)=0;
    virtual int pop()=0;
    virtual int Rozmiar()=0;
 
