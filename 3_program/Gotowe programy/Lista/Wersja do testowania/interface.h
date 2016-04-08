@@ -5,7 +5,7 @@
 class interface
 {
     public:
-        virtual int add(int position) =0;
+        virtual int add(int x,int position) =0;
         virtual void remove(int position) =0;
         virtual element* get(int position) =0;
         virtual int size() =0;

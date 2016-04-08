@@ -3,11 +3,12 @@
 
 class element
 {
+public:
     friend class list_head;
     int value;
     element* next;
-public:
-    element();
+
+    element(int x);
 };
 
 #endif // ELEMENT_H
