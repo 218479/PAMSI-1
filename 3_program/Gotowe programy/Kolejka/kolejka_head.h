@@ -9,6 +9,7 @@ class kolejka_head
         void move_out_first();
         void get_at_back();
         int size();
+        void quick_sort();
     private:
         element* first; //pointer to first element
         element* last;  //pointer to last element

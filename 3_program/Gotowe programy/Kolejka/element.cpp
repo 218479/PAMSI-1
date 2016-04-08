@@ -3,9 +3,8 @@
 
 using namespace std;
 
-element::element()
+element::element(int x)
 {
-    this->next=0;
-    cout<<"Value for new element: ";
-    cin>>this->value;
+    next=NULL;
+    value=x;
 }

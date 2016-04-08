@@ -54,3 +54,10 @@ void kolejka_head::move_out_first(){
         cout<<"Element removed"<<endl;
     }
 }
+void kolejka_head::quick_sort()
+{
+    element *q=first; //Ustawienie jednego wskaznika na poczatek
+    element *p=last;  //Ustawienie drugiego wskaznika na koniec
+
+
+}

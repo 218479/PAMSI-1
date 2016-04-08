@@ -6,7 +6,6 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
     kolejka_head Kolejka;
     Kolejka.move_out_first();
     Kolejka.get_at_back();
